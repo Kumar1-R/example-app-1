@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +24,10 @@ Route::get('/dashboard', function(){
 });
 
 Route::get('/about', function(){
+    return view('content.about');
+});
+
+Route::get('/', function(){
     return view('content.about');
 });
 
